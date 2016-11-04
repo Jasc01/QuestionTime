@@ -1,0 +1,10 @@
+c:\users\jasc9\documents\visual studio 2015\Projects\QuestionTime\QuestionTime\bin\Debug\QuestionTime.exe.config
+C:\Users\jasc9\documents\visual studio 2015\Projects\QuestionTime\QuestionTime\obj\Debug\QuestionTime.csprojResolveAssemblyReference.cache
+C:\Users\jasc9\documents\visual studio 2015\Projects\QuestionTime\QuestionTime\obj\Debug\QuestionTime.csproj.GenerateResource.Cache
+C:\Users\jasc9\documents\visual studio 2015\Projects\QuestionTime\QuestionTime\bin\Debug\QuestionTime.exe
+C:\Users\jasc9\documents\visual studio 2015\Projects\QuestionTime\QuestionTime\bin\Debug\QuestionTime.pdb
+C:\Users\jasc9\documents\visual studio 2015\Projects\QuestionTime\QuestionTime\obj\Debug\QuestionTime.Properties.Resources.resources
+C:\Users\jasc9\documents\visual studio 2015\Projects\QuestionTime\QuestionTime\obj\Debug\QuestionTime.exe
+C:\Users\jasc9\documents\visual studio 2015\Projects\QuestionTime\QuestionTime\obj\Debug\QuestionTime.pdb
+C:\Users\jasc9\documents\visual studio 2015\Projects\QuestionTime\QuestionTime\obj\Debug\QuestionTime.GUI_Menu.resources
+C:\Users\jasc9\documents\visual studio 2015\Projects\QuestionTime\QuestionTime\obj\Debug\QuestionTime.GUI_Game.resources
