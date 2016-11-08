@@ -54,9 +54,14 @@ namespace QuestionTime
             _guiMenu.Close();
         }
 
-        public void setQuestion()
+        public void getAnotherQuestion()
         {
             _tempQuestion = _mainGame.getQuestion();
+        }
+
+        public void setQuestion()
+        {
+            getAnotherQuestion();
             if(_tempQuestion != null)
             {
                 _guiGame.question_text_txt.Text = _tempQuestion.QuestionText;
@@ -85,6 +90,10 @@ namespace QuestionTime
         public void sumPoint()
         {
             _player.Score += 1;
+        }
+
+        public void updateScore()
+        {
             _guiGame.player_score_txt.Text = "" + _player.Score;
         }
 
@@ -101,6 +110,21 @@ namespace QuestionTime
         public string getRightAnswer()
         {
             return _tempQuestion.Answers.ElementAt(_tempQuestion.IDAnswer);
+        }
+
+        public void editQuestion(int pIndex, string pQuestion)
+        {
+            _mainGame.editQuestion(pIndex, pQuestion);
+        }
+
+        public void addQuestion(string pQuestion)
+        {
+            _mainGame.addQuestion(pQuestion);
+        }
+
+        public void deleteQuestion(int pIndex)
+        {
+            _mainGame.deleteQuestion(pIndex);
         }
     }
 }

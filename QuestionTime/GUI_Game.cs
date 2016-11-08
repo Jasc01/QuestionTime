@@ -36,6 +36,7 @@ namespace QuestionTime
             {
                 this.right_answer_pic.Visible = true;
                 _mainController.sumPoint();
+                _mainController.updateScore();
                 _mainController.setQuestion();
             } else
             {

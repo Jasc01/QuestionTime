@@ -4,13 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
+using Moq;
 
 namespace QuestionTime.Test
 {
     [TestFixture]
     class QuestionTest
     {
-        Question sut; //SetUp Object (First instance)
+
+        IQuestion sut; //SetUp Object (First instance)
         List<String> answerList;
         int idAnswer,difficulty;
 
@@ -53,6 +55,12 @@ namespace QuestionTime.Test
         {
             int expectedResult = sut.Difficulty;
             Assert.That(expectedResult, Is.EqualTo(difficulty));
+        }
+
+        [OneTimeTearDown]
+        public void TestTearDown()
+        {
+            sut = null;
         }
     }
 }

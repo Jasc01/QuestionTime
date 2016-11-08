@@ -23,5 +23,11 @@ namespace QuestionTime.Test
             int expectedResult = sut.Score;
             Assert.That(expectedResult, Is.EqualTo(0));
         }
+
+        [OneTimeTearDown]
+        public void TestTearDown()
+        {
+            sut = null;
+        }
     }
 }
