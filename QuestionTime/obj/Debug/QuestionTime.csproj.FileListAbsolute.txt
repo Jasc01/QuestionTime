@@ -9,13 +9,6 @@ C:\Users\jasc9\documents\visual studio 2015\Projects\QuestionTime\QuestionTime\o
 C:\Users\jasc9\documents\visual studio 2015\Projects\QuestionTime\QuestionTime\obj\Debug\QuestionTime.GUI_Menu.resources
 C:\Users\jasc9\documents\visual studio 2015\Projects\QuestionTime\QuestionTime\obj\Debug\QuestionTime.GUI_Game.resources
 C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\bin\Debug\QuestionTime.exe.config
-<<<<<<< 596d3fe43bd51de9df8859a153f6c1ce0d129c79
-C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\obj\Debug\QuestionTime.exe
-C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\obj\Debug\QuestionTime.pdb
-C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\bin\Debug\QuestionTime.exe
-C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\bin\Debug\QuestionTime.pdb
-C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\obj\Debug\QuestionTime.csprojResolveAssemblyReference.cache
-=======
 C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\bin\Debug\QuestionTime.exe
 C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\bin\Debug\QuestionTime.pdb
 C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\bin\Debug\Castle.Core.dll
@@ -26,15 +19,10 @@ C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\bin\Debug\Castle.Core.xml
 C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\bin\Debug\Moq.xml
 C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\bin\Debug\nunit.framework.xml
 C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\bin\Debug\Rhino.Mocks.xml
->>>>>>> Hard Test
+C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\obj\Debug\QuestionTime.csprojResolveAssemblyReference.cache
 C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\obj\Debug\QuestionTime.GUI_Game.resources
 C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\obj\Debug\QuestionTime.GUI_Menu.resources
 C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\obj\Debug\QuestionTime.Properties.Resources.resources
 C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\obj\Debug\QuestionTime.csproj.GenerateResource.Cache
-<<<<<<< 596d3fe43bd51de9df8859a153f6c1ce0d129c79
-C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\bin\Debug\nunit.framework.dll
-C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\bin\Debug\nunit.framework.xml
-=======
 C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\obj\Debug\QuestionTime.exe
 C:\Users\kevinah95\Desktop\QuestionTime\QuestionTime\obj\Debug\QuestionTime.pdb
->>>>>>> Hard Test
