@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuestionTime
 {
-    class Question
+    class Question : IQuestion
     {
         private string _questionText;
         private List<string> _answers;
