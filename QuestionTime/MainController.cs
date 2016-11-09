@@ -59,6 +59,11 @@ namespace QuestionTime
             _tempQuestion = _mainGame.getQuestion();
         }
 
+        public void setGUI_GAME(GUI_Game pGUI_Game)
+        {
+            _guiGame = pGUI_Game;
+        }
+
         public void setQuestion()
         {
             getAnotherQuestion();

@@ -25,12 +25,23 @@ namespace QuestionTime.Test
         }
 
         [Test]
-        public void ShouldSetPlayerGame()
+        public void ShouldSetPlayerGameName()
         {
             string expectedResult = sut.getName();
             Assert.IsNotNull(expectedResult);
             Assert.That(expectedResult, Is.EqualTo("Player 1"));
         }
+
+        [Test]
+        public void ShouldSetPlayerGameNameEmpty()
+        {
+            sut.setPlayerName("");
+            string expectedResult = sut.getName();
+            Assert.IsNotNull(expectedResult);
+            Assert.IsEmpty(expectedResult);
+        }
+
+        
 
         [Test]
         public void ShouldSumPoint()

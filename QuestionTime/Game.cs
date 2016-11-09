@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace QuestionTime
 {
@@ -28,6 +29,7 @@ namespace QuestionTime
             {
                 Question tempQuestion = _questions.ElementAt(_currentQuestion);
                 _currentQuestion++;
+                Console.WriteLine(_currentQuestion);
                 return tempQuestion;
             } else
             {
@@ -35,18 +37,49 @@ namespace QuestionTime
             }
         }
 
+        public void resetQuestionList()
+        {
+            _questions.Clear();
+        }
+
         public void makeQuestions()
         {
             prepareQuestions();
             randomQuestions();
             cutList();
+            orderQuestionsByDifficulty();
+        }
+
+        public void orderQuestionsByDifficulty()
+        {
+            Question[] tempList = _questions.ToArray();
+            Question t;
+            for (int a = 1; a < tempList.Length; a++)
+            {
+                for (int b = tempList.Length - 1; b >= a; b--)
+                {
+                    if (tempList[b - 1].Difficulty > tempList[b].Difficulty)
+                    {
+                        t = tempList[b - 1];
+                        tempList[b - 1] = tempList[b];
+                        tempList[b] = t;
+                    }
+                }
+            }
+            _questions = tempList.ToList();
         }
 
         public void cutList()
         {
             if (_questions.Count > _numberOfQuestions)
             {
-                _questions.RemoveRange(_numberOfQuestions - 1, _questions.Count - _numberOfQuestions);
+                if (_numberOfQuestions == 0)
+                {
+                    _questions.Clear();
+                }else
+                {
+                    _questions.RemoveRange(_numberOfQuestions - 1, _questions.Count - _numberOfQuestions);
+                }
                 _realNumberOfQuestions = _numberOfQuestions;
             } else
             {
@@ -63,6 +96,20 @@ namespace QuestionTime
         {
             string[] txtLines = readFile();
             formatTextLines(txtLines);
+        }
+
+        public void setDefaultQuestions()
+        {
+            string[] questions = new string[] { "What is B?*/*A]B]C]D*/*1*/*1", "What is C?*/*A]B]C]D*/*2*/*2", "What is D?*/*A]B]C]D*/*3*/*3", "What is A?*/*A]B]C]D*/*0*/*4" };
+            // Create a writer and open the file:
+            StreamWriter log = new StreamWriter(path + "questions.txt");
+            // Write to the file:
+            foreach (string line in questions)
+            {
+                log.WriteLine(line);
+            }
+            // Close the stream:
+            log.Close();
         }
 
         public void formatTextLines(string[] txtLines)

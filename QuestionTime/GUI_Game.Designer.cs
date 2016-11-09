@@ -184,6 +184,6 @@
         public System.Windows.Forms.Label player_score_txt;
         private System.Windows.Forms.PictureBox right_answer_pic;
         private System.Windows.Forms.PictureBox wrong_answer_pic;
-        private System.Windows.Forms.Label final_game_txt;
+        public System.Windows.Forms.Label final_game_txt;
     }
 }

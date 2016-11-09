@@ -12,16 +12,11 @@ namespace QuestionTime.Test
     class GameTest
     {
         Game sut; //Subject Under Test
-        List<String> answerList = new List<String>();
 
         [OneTimeSetUp]
         public void TestSetup()
         {
             sut = new Game();
-            answerList.Add("A");
-            answerList.Add("B");
-            answerList.Add("C");
-            answerList.Add("D");
             sut.NumberOfQuestions = 4;
         }
 
@@ -34,11 +29,34 @@ namespace QuestionTime.Test
         }
 
         [Test]
+        public void ShouldorderQuestionsByDifficulty()
+        {
+            sut.setDefaultQuestions();
+            sut.resetQuestionList();
+            sut.NumberOfQuestions = 4;
+            sut.makeQuestions();
+            Question expected = sut.getQuestion();
+            Assert.That(expected.Difficulty, Is.EqualTo(1));
+        }
+
+        [Test]
         public void ShouldSetNumberOfQuestions()
         {
+            sut.NumberOfQuestions = 4;
             int expected = sut.NumberOfQuestions;
             Assert.That(expected, Is.EqualTo(4));
         }
+
+        [Test]
+        public void ShouldSetGameWithoutQuestions()
+        {
+            sut.NumberOfQuestions = 0;
+            sut.makeQuestions();
+            Question expectedResult = sut.getQuestion();
+            Assert.IsNull(expectedResult);
+        }
+
+        
 
         [Test]
         public void ShouldFormatTextLines()
@@ -77,6 +95,7 @@ namespace QuestionTime.Test
             bool expected = sut.editQuestion(1, "Question Edit Dummy*/*A]B]C]D*/*2*/*1");
             Assert.IsTrue(expected);
         }
+
 
         [OneTimeTearDown]
         public void TestTearDown()
